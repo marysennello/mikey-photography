@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --outfit: 'Outfit', sans-serif;
+  --quest: 'Questrial', sans-serif;
+
+}
+
+* {
+  font-family: var(--quest);
+}
+html {
+  box-sizing: border-box;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+body {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: grid;
+  /* border: 7px solid rgb(15, 15, 15); */
+  /* background-color: rgb(252, 252, 251); */
+}
+body {
+  @apply bg-zinc-50
+}
+
+.scrollsnap-item {
+  scroll-snap-align: start;
+}
