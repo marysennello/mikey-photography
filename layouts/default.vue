@@ -5,7 +5,7 @@
 <template>
   <div class="flex flex-wrap md:flex-nowrap">
     <!-- side bar -->
-    <aside class="shadow py-3">
+    <aside class="shadow py-3 bg-zinc-100 md:bg-zinc-50">
       <HeaderNav />
     </aside>
 
