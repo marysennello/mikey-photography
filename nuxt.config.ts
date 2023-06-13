@@ -15,6 +15,9 @@ export default defineNuxtConfig({
          
         //google fonts
         {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Questrial&display=swap'},
+
+        //font awesome
+        
         
       ]
     }

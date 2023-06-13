@@ -1,8 +1,24 @@
-<script lang="ts" setup>
+<script lang="ts" >
+//prevent right click throughout 
+import { defineComponent } from 'vue';
 
+export default defineComponent({
+  mounted() {
+    this.preventRightClick();
+  },
+  methods: {
+    preventRightClick() {
+      const handleContextMenu = (event: MouseEvent) => {
+        event.preventDefault();
+      };
+
+      window.addEventListener('contextmenu', handleContextMenu);
+    },
+  },
+});
 </script>
 
-<template>
+<template id="window">
   <div class="flex flex-col 
   md:flex-row md:flex-nowrap min-h-screen">
 

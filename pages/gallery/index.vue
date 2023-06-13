@@ -4,7 +4,7 @@
     const entries = data.value;
     const gallery = entries.photos.photo;
 
-    console.log(gallery);
+    // console.log(gallery);
 
     // # Typical usage  
     // https://live.staticflickr.com/{server-id}/{id}_{secret}_{size-suffix}.jpg
@@ -15,14 +15,9 @@
     <div v-for="image in gallery" class="scrollsnap-item">
 
       <div>
-        <img :src="`https://live.staticflickr.com/${image.server}/${image.id}_${image.secret}_b.jpg`" :alt="image.id" class="object-cover border border-zinc-800">
-
-        <!-- hover overlay -->
-        <!-- <div class="absolute inset-0 bg-zinc-800 bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-          <h3 class="text-zinc-50 text-2xl font-bold">{{image.title}}</h3>
-        </div> -->
-
+        <img :src="`https://live.staticflickr.com/${image.server}/${image.id}_${image.secret}_b.jpg`" :alt="`${image.title}, ${image.id}`" class="object-cover border border-zinc-800">
       </div>
+      
     </div>
   </div>
 
