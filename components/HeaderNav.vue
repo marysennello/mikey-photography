@@ -4,11 +4,12 @@
 
 <template>
   <div class="flex flex-row flex-wrap justify-center
-  md:flex-nowrap md:flex-col md:justify-between md:h-screen 
-  py-1 md:py-5 sticky top-0
+  md:flex-nowrap md:flex-col md:justify-around md:h-screen 
+  sticky top-0
+  mx-5
   ">
     <header>
-      <h1 class="text-2xl">mikey de pala</h1>
+      <h1 class="text-2xl py-2 md:py-0">mikey de pala</h1>
     </header>
 
     <nav>
@@ -43,6 +44,6 @@
     @apply text-cyan-700
   }
   li {
-    @apply text-2xl px-2 py-1 md:py-3 w-full hover:text-zinc-50 hover:bg-zinc-800
+    @apply text-lg md:text-2xl px-2 py-1 md:py-3 w-full md:hover:text-zinc-50 md:hover:bg-zinc-800
   }
 </style>
