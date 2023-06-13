@@ -15,11 +15,9 @@ html {
   box-sizing: border-box;
   scroll-snap-type: y proximity;
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  /* scroll-padding-top: 5rem; */
 }
 body {
-  padding-left: 10px;
-  padding-right: 10px;
   display: grid;
   /* border: 7px solid rgb(15, 15, 15); */
   /* background-color: rgb(252, 252, 251); */
