@@ -53,7 +53,7 @@ export default {
 
     <Loading v-if="isLoading"/>
 
-    <div v-else class="flex flex-wrap gap-20 justify-center">
+    <div v-else class="flex flex-wrap gap-5 md:gap-20 md:justify-center justify-around">
 
       <!-- random color image -->
       <NuxtLink to="/gallery/color">

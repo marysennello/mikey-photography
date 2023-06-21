@@ -33,7 +33,7 @@ export default {
 
 <template>
     <div >
-        <div v-if="isLoading" class="text-zinc-500">loading...</div>
+        <Loading v-if="isLoading"/>
         <div v-else-if="image" class="scrollsnap-item relative border border-zinc-800">
             <NuxtLink to="/gallery">
                 <!-- to replace img src once Mikey makes a homepage tag -->
