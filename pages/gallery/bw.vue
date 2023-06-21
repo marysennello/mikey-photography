@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="isLoading" class="text-zinc-500">loading...</div>
+    <Loading v-if="isLoading"/>
     <div v-else-if="images.length > 0" class="flex flex-row flex-wrap gap-5 justify-center justify-items-center items-center">
       <div v-for="image in images" :key="image.id" class="flex justify-center border border-zinc-800">
         <img :src="image.url" :alt="image.title" class="object-fill"/>
