@@ -57,31 +57,36 @@ export default {
 
       <!-- random color image -->
       <NuxtLink to="/gallery/color">
-
-        <div v-if="colorImage" class="w-80 h-80 border border-zinc-800 overflow-hidden flex relative">
-          <img :src="colorImage.url" :alt="colorImage.title" class="relative object-cover flex-1" />
-          <div class="absolute inset-0 bg-zinc-900 bg-opacity-50 flex items-center justify-center opacity-100 hover:opacity-10 transition-opacity duration-300">
+        <GalleryLink v-if="colorImage">
+          <img :src="colorImage.url" :alt="colorImage.title" class="relative flex-1 object-cover" />
+          <GalleryLinkOverlay>
             <h3 class="text-white text-2xl font-bold">Color</h3>
-          </div>
-        </div>
-    
+          </GalleryLinkOverlay>
+        </GalleryLink>
         <div v-else>Color Images</div>
-
       </NuxtLink>
 
       <!-- random bw image -->
       <NuxtLink to="/gallery/bw">
 
-        <div v-if="bwImage" class="w-80 h-80 border border-zinc-800 overflow-hidden flex relative">
+        <GalleryLink v-if="colorImage">
           <img :src="bwImage.url" :alt="bwImage.title" class="relative object-cover flex-1" />
-          <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-100 hover:opacity-30 transition-opacity duration-300">
-            <h3 class="text-white text-2xl font-bold">Black and White</h3>
-          </div> 
-        </div>
+          <GalleryLinkOverlay>
+            <h3 class="gallery-name">Black and White</h3>
+          </GalleryLinkOverlay> 
+        </GalleryLink>
 
-        <div v-else>Black and White Images.</div>
+        <div v-else>Black and White Images</div>
 
       </NuxtLink>
     </div>
   </div>
 </template>
+
+
+<style scoped>
+  .gallery-name {
+    @apply text-white text-2xl font-bold
+  }
+
+</style>
