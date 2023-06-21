@@ -1,14 +1,8 @@
 Portfolio for Mikey de Pala
 
-Mikey to do - 
-  - create tag for homepage image to allow for him to update as he wishes
-  - create tags for gallery page (planning for black and white, and color)
-  -about page content
+to do - 
+convert gallery page links to components
 
-Mary to do - 
-  - set up gallery page once Mikey does tags
-  - contact page
-  - about page
 
 
 
