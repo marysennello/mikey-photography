@@ -23,5 +23,5 @@ body {
 }
 
 .scrollsnap-item {
-  @apply snap-start md:snap-center;
+  @apply snap-start md:snap-start;
 }

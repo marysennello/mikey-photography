@@ -2,11 +2,22 @@
   <div>
     <Loading v-if="isLoading"/>
     <div v-else-if="images.length > 0" class="flex flex-row flex-wrap gap-5 justify-center justify-items-center items-center">
-      <div v-for="image in images" :key="image.id" class="flex justify-center border border-zinc-800">
+      <div v-for="image in images" :key="image.id" class="flex justify-center border border-zinc-800 h-screen">
         <img :src="image.url" :alt="image.title" class="object-fill"/>
       </div>
     </div>
     <div v-else>No images found with tag "blackandwhite".</div>
+    <div>
+      <!-- all photos -->
+      <NuxtLink to="/gallery/all" class="navlink gallery-all flex justify-center items-center w-full my-5">  
+        <h4 class="text-3xl inline">view all photos</h4>
+        <span class="material-symbols-outlined inline pl-3">
+          east
+        </span>
+      </NuxtLink>
+
+
+    </div>
   </div>
 </template>
 
@@ -28,7 +39,7 @@ export default {
       
       if (blackAndWhiteImages.length > 0) {
         this.images = blackAndWhiteImages.map((image) => ({
-          url: `https://live.staticflickr.com/${image.server}/${image.id}_${image.secret}_z.jpg`,
+          url: `https://live.staticflickr.com/${image.server}/${image.id}_${image.secret}_b.jpg`,
           title: image.title,
         }));
       }
@@ -40,3 +51,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+  .gallery-all {
+    @apply text-lg md:text-2xl px-2 py-1 md:py-3 w-full md:hover:text-zinc-50 md:hover:bg-zinc-800 text-center md:text-left
+  }
+</style>

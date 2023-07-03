@@ -18,7 +18,7 @@
           <NuxtLink to="/" class="text-center"> Home </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/gallery" class="navlink"> Galleries </NuxtLink>
+          <NuxtLink to="/gallery/bw" class="navlink"> Gallery </NuxtLink>
         </li>
         <li>
           <NuxtLink to="/contact" class="navlink"> Contact </NuxtLink>
