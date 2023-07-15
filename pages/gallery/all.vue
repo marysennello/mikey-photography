@@ -27,7 +27,7 @@ export default {
            
       if (entries.length > 0) {
         this.images = entries.map((image) => ({
-          url: `https://live.staticflickr.com/${image.server}/${image.id}_${image.secret}_c.jpg`,
+          url: `https://live.staticflickr.com/${image.server}/${image.id}_${image.secret}_b.jpg`,
           title: image.title,
         }));
       }
