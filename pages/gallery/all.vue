@@ -2,7 +2,7 @@
   <div>
     <Loading v-if="isLoading"/>
     <div v-else-if="images.length > 0" class="flex flex-row flex-wrap gap-5 justify-center justify-items-center items-center">
-      <div v-for="image in images" :key="image.id" class="flex justify-center xl:h-screen ">
+      <div v-for="image in images" :key="image.id" class="flex justify-center ">
         <img :src="image.url" :alt="image.title" class="object-contain border border-zinc-800"/>
       </div>
     </div>
