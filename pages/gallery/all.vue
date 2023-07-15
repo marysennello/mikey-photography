@@ -3,7 +3,7 @@
     <Loading v-if="isLoading"/>
     <div v-else-if="images.length > 0" class="flex flex-row flex-wrap gap-5 justify-center justify-items-center items-center">
       <div v-for="image in images" :key="image.id" class="flex justify-center border border-zinc-800 md:h-screen ">
-        <img :src="image.url" :alt="image.title" class="object-fill"/>
+        <img :src="image.url" :alt="image.title" class="object-fit"/>
       </div>
     </div>
     <div v-else>No images found.</div>
